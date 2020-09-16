@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <style>
+        * {margin: 0; padding: 0;}
+
+        html {
+                    font-size: 10px;
+                    line-height: 10px
+                }
+
+        body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,audio,video {
+            margin: 0;
+            padding: 0
+        }
+
+        body,input,textarea,select,table,button,code {
+            font-family: -apple-system, BlinkMacSystemFont, helvetica, Apple SD Gothic Neo, sans-serif;
+            font-size: 1.6rem;
+            line-height: 2rem
+        }
+
+        body {
+            color: #000;
+            word-break: break-all;
+            word-wrap: break-word;
+            -webkit-text-size-adjust: none
+        }
+
+        img,fieldset {
+            border: 0
+        }
+
+        ol,ul {
+            list-style: none
+        }
+
+        i,em,address,cite,dfn {
+            font-style: normal
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0.1)
+        }
+
+        a,button {
+            cursor: pointer
+        }
+
+        table {
+            border-collapse: collapse;
+            word-break: break-word
+        }
+
+        table caption {
+            display: none !important
+        }
+
+        hr {
+            display: none !important
+        }
+
+        img,svg {
+            display: inline-block;
+            vertical-align: top
+        }
+
+        input,select,button {
+            border-radius: 0;
+            outline: none;
+            -webkit-appearance: none
+        }
+
+        button {
+            padding: 0;
+            border: 0;
+            background: none
+        }
+
+        mark {
+            background: none;
+            font-weight: 700;
+            color: inherit
+        }
+
+        html,body,#app-root {
+            height: 100%
+        }
+
+        .list-scroll{
+            overflow: hidden;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: auto;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+        }
+        
+        .map{
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .header{
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 5000;
+            height: 48px;
+            line-height: 48px;
+            background: #333;
+            color: #fff;
+        }
+
+        .header.show{
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- https://m.place.naver.com/place/list?query=%ED%8E%98%EB%9F%BC%ED%83%80%EC%9B%8C&x=126.9783880&y=37.5666100&start=1&display=30&adult=false&spq=false&highlight=true&sessionId=rN7Gqen0wS0dOyFZeqYt8A%3D%3D&level=bottom&entry=ple -->
+    <div class="wrap">
+        <header class="header show">Header</header>
+        <div role="main">
+            <!-- 리스트 -->
+            <div class="list-scroll" id="_list_scroll_container">
+               <div class="list-wrap" style="transform: translateY(690px);"><!-- transform: translateY(690px); --> <!-- position: relative; z-index: 1;-->
+                    <div style="position: relative;  z-index: 4000; background: #e9ecef;"><!-- position: relative; 삭제 -->
+                        <div class="tit" style="border-bottom: 1px solid #ecf0f2;">
+                            <div style="display: flex; height: 45px; background: #fff;">
+                                <div style="overflow: hidden;
+                                overflow-x: auto;
+                                white-space: nowrap;
+                                flex: 1;
+                                padding: 0 18px;">
+                                    <span>관련도순</span>
+                                    <span>거리순</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ul-list" style="min-height: 642px;"><!-- min-height: ..px; -->
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <!-- 지도 -->
+            <div class="map" style="top: 48px;">
+                <div style="height: 642px; transform: translate3d(0px, 0px, 0px)"><!-- height:; 값 세팅  --> <!-- transform: translate3d(0px, -193px, 0px); 리스트가 50% 이상 올라오면-->
+                    <div style="position: relative;">
+                        <div style="width: 414px;height: 642px;position: relative;overflow: hidden;
+                        background: url(https://ssl.pstatic.net/static/maps/mantle/1x/pattern_1.png) 0px 0px repeat transparent;"> 지도 영역 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+    <!--
+        // 
+        1. devcie width, height 크기를 구한다.  
+            - widnow.innerWidth 
+         
+
+        //
+    -->
+</body>
+</html>
