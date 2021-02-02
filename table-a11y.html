@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+
+    	<!-- 191101_css링크수정 - main.css삭제/components추가 -->
+	<link rel="stylesheet" type="text/css" href="/css/common.css" media="all" /><!-- [C] 공통 스타일 -->
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" media="all" /><!-- [C] 박스 모델 -->
+	<link rel="stylesheet" type="text/css" href="/css/widgets.css" media="all" /><!-- [C] 기능별 위젯 -->
+	<link rel="stylesheet" type="text/css" href="/css/components.css" media="all" /><!-- [C] 컴포너트 위젯 -->
+	<!-- <link rel="stylesheet" type="text/css" href="/css/main.css" media="all" /> --><!-- [C] 단락별 컴퍼넌트 -->
+	<!-- //191101_css링크수정 - main.css삭제/components추가 -->
+    <style>
+        * {margin: 0; padding: 0;}
+/*        
+[role="table"] {
+  display: table;
+  width: 100%;
+}
+
+[role="table"] [role="row"] {
+  display: table-row;
+}
+
+[role="table"] [role="cell"],
+[role="table"] [role="columnheader"] 
+[role="table"] [role="rowheader"] {
+  display: table-cell;
+  padding: 0.125em 0.25em;
+  width: 50%;
+}
+
+[role="table"] [role="columnheader"] {
+  font-weight: bold;
+  border-bottom: thin solid #888;
+}
+
+[role="table"] [role="rowgroup"]:last-child [role="row"]:nth-child(odd) {
+  background-color: #ddd;
+}
+
+*/
+
+.table {}
+.tbody-tit {margin-top: 30px;}
+.tbody-tit .td-cell{
+    font-size: 14px;
+}
+
+
+.tr-row{
+    display: flex; 
+    width: 100%;
+}
+
+.tbody-cont { margin-top: 20px;}
+.tbody-cont .td-cell{
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tbody-cont .td-cell:first-child{
+    border-right: 1px solid #d6d7d8;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cont-box">
+        <div class="title">추가혜택</div>
+        <div class="table" role="table" tabindex="0" style="width: 100%;" aria-label="나의 요금제(상품명) 와 비교요금제(상품명) 추가혜택 표" >
+            <div class="thead tod-blind" role="rowgroup" tabindex="0">
+                <div role="row">
+                    <span role="columnheader">나의 요금제(상품명)</span>
+                    <span role="columnheader">비교 요금제(상품명)</span>
+                </div>
+            </div>
+            <div class="tbody-tit" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="rowheader" class="td-cell"><img src="" /> T멤버쉽</span>
+                </div>
+            </div>
+            <div class="tbody-cont" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="cell" class="td-cell">VIP 제공</span>
+                    <span role="cell" class="td-cell">등급유지</span>
+                </div>
+            </div>
+            <div class="tbody-tit" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="rowheader" class="td-cell"><img src="" /> 동영상</span>
+                </div>
+            </div>
+            <div class="tbody-cont" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="cell" class="td-cell">Wave 앤 데이터 무료</span>
+                    <span role="cell" class="td-cell">-</span>
+                </div>
+            </div>
+            <div class="tbody-tit" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="rowheader" class="td-cell"><img src="" /> 음악</span>
+                </div>
+            </div>
+            <div class="tbody-cont" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="cell" class="td-cell">FLO 앤 데이터 무료</span>
+                    <span role="cell" class="td-cell">-</span>
+                </div>
+            </div>
+            <div class="tbody-tit" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="rowheader" class="td-cell"><img src="" />휴대폰 보험</span>
+                </div>
+            </div>
+            <div class="tbody-cont" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="cell" class="td-cell">분실파손</span>
+                    <span role="cell" class="td-cell">-</span>
+                </div>
+            </div>
+            <div class="tbody-tit" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="rowheader" class="td-cell"><img src="" />함께쓰기</span>
+                </div>
+            </div>
+            <div class="tbody-cont" role="rowgroup">
+                <div role="row" class="tr-row">
+                    <span role="cell" class="td-cell">2회선 무료</span>
+                    <span role="cell" class="td-cell">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- 표 -->
+
+    <table style="margin-top: 20px;">
+        <caption>나의 요금제(상품명) 와 비교요금제(상품명) 추가혜택 표</caption>
+        <thead>
+            <tr>
+                <th scope="col">나의 요금제(상품명)</th>
+                <th scope="col">비교 요금제(상품명)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2" scope="col">T멤버쉽</th>
+            </tr>
+            <tr>
+                <td>VIP 제공</td>
+                <td>등급유지</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="col">동영상</th>
+            </tr>
+            <tr>
+                <td>Wave 앤 데이터 무료</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="col">함께쓰기</th>
+            </tr>
+            <tr>
+                <td>2회선 무료</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
